@@ -9,7 +9,7 @@ setup(
     author='Ananyo Bhattacharya',
     author_email='ananyobhattacharya10@gmail.com',
     description='A Python package for data structures and algorithms',
-    long_description=open('./README_pypi.md').read(),
+    long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/UniquePython/pyalgo',
     classifiers=[
