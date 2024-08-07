@@ -83,7 +83,3 @@ None
 
 ## binary_search_sorted(arr: List[int], target: int) -> Union[int, None]
 This function is exactly the same as `binary_search()`. The only difference is that it works with unsorted lists, contrary to `binary_search()`.
-
-# Contributing
-
-For contributing, check out `CONTRIBUTING.md`.
