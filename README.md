@@ -1,21 +1,21 @@
-# PyAlgo
-**PyAlgo** is dedicated to help programmers **save** their precious time by providing functions for common algorithms and data structures.
+# Algods
+**Algods** is dedicated to help programmers **save** their precious time by providing functions for common algorithms and data structures.
 
 A big challenge that I faced during making this module is that I did **NOT** know anything about algorithms or data structures. I had to spend hours and hours on different online courses to write this module. 
 
 Currently, this module features only 2 *search* algorithms - **linear search** and **binary search**. In future, I plan to add more categories of algorithms and data structures like *merge*, *sort*, *linked lists*, etc. 
 
 # Installation
-Installing PyAlgo is pretty simple and intuitive.
+Installing Algods is pretty simple and intuitive.
 
 - On Linux, run:
 ```terminal
-sudo pip install pyalgo
+sudo pip install algods
 ```
 
 - On macOS or Windows, run:
 ```terminal
-pip install pyalgo
+pip install algods
 ```
 
 # Documentation:

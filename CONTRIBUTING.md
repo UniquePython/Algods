@@ -1,25 +1,25 @@
-# Contributing to pyalgo
+# Contributing to Algods
 
-Thank you for considering contributing to pyalgo! Here are some guidelines to help you get started:
+Thank you for considering contributing to Algods! Here are some guidelines to help you get started:
 
 ## How to Contribute
 
 1. **Fork the Repository:**
-   - Go to the [repository](https://github.com/UniquePython/pyalgo.git).
+   - Go to the [repository](https://github.com/UniquePython/Algods.git).
    - Click on the "Fork" button at the top-right corner of the page to create a personal copy of the repository.
 
 2. **Clone the Forked Repository:**
    - Open a terminal.
    - Run the following command to clone the forked repository:
      ```bash
-     git clone https://github.com/YOUR-USERNAME/pyalgo.git
+     git clone https://github.com/YOUR-USERNAME/Algods.git
      ```
    - Replace `YOUR-USERNAME` with your GitHub username.
 
 3. **Navigate to the Project Directory:**
    - Change into the project directory:
      ```bash
-     cd pyalgo
+     cd Algods
      ```
 
 4. **Create a New Branch:**

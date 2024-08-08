@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pyalgo',
+    name='algods',
     version='0.1.0',
     packages=find_packages(),
     install_requires=[],
@@ -11,7 +11,7 @@ setup(
     description='A Python package for data structures and algorithms',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/UniquePython/pyalgo',
+    url='https://github.com/UniquePython/Algods',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
