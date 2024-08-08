@@ -19,7 +19,7 @@ Thank you for considering contributing to Algods! Here are some guidelines to he
 3. **Navigate to the Project Directory:**
    - Change into the project directory:
      ```bash
-     cd Algods
+     cd algods
      ```
 
 4. **Create a New Branch:**
