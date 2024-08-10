@@ -8,12 +8,7 @@ Currently, this module features only 2 *search* algorithms - **linear search** a
 # Installation
 Installing Algods is pretty simple and intuitive.
 
-- On Linux, run:
-```terminal
-sudo pip install algods
-```
-
-- On macOS or Windows, run:
+Open up a terminal and run:
 ```terminal
 pip install algods
 ```
@@ -22,7 +17,7 @@ pip install algods
 Enough talk. Let's come to the main part. Documentation. Here is a detailed breakdown of all the functions. Examples are provided for better understanding.
 
 ## linear_search(arr: List[int], target: int) -> Union[int, None]
-This function takes an unsorted/sorted list containing integer values and a target for an input. It loops through each element in the list and checks if it is equal to the target. It returns the index of the element if the target exists in the list, else returns false. 
+This function takes an unsorted/sorted list containing integer values and a target for an input. It loops through each element in the list and checks if it is equal to the target. It returns the index of the element if the target exists in the list, else returns None. 
 
 Example:
 * **If target exists in list.**
@@ -52,7 +47,7 @@ None
 ```
 
 ## binary_search(arr: List[int], target: int) -> Union[int, None]
-This function takes an sorted list containing integer values and a target for an input. It keeps slicing the list in half until the list contains only one element or a match is found. It returns the index of the element if the target exists in the list, else returns false. 
+This function takes an sorted list containing integer values and a target for an input. It keeps slicing the list in half until the list contains only one element or a match is found. It returns the index of the element if the target exists in the list, else returns None. 
 
 Example:
 * **If target exists in list.**
@@ -81,8 +76,18 @@ path/to/file> python lin_search.py
 None
 ```
 
-## binary_search_sorted(arr: List[int], target: int) -> Union[int, None]
-This function is exactly the same as `binary_search()`. The only difference is that it works with unsorted lists, contrary to `binary_search()`.
+# Usage
+Here, I will show you how to import the algorithms and use them.
+
+```python
+from algods.search import binary_search
+
+array = [1, 3, 5, 6]
+target = 6
+
+result = binary_search(array, target)
+print(result)
+```
 
 # Contributing
 
