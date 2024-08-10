@@ -3,7 +3,10 @@
 
 A big challenge that I faced during making this module is that I did **NOT** know anything about algorithms or data structures. I had to spend hours and hours on different online courses to write this module. 
 
-Currently, this module features only 2 *search* algorithms - **linear search** and **binary search**. In future, I plan to add more categories of algorithms and data structures like *merge*, *sort*, *linked lists*, etc. 
+# Contents
+- ## Algorithms
+    - Linear Search
+    - Binary Search
 
 # Installation
 Installing Algods is pretty simple and intuitive.
@@ -90,4 +93,4 @@ print(result)
 ```
 
 # Contributing
-For contributing, check out `CONTRIBUTING.md`.
+For contributing, check out **[CONTRIBUTING.md](https://github.com/UniquePython/Algods/blob/main/CONTRIBUTING.md)**.
