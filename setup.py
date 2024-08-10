@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='algods',
-    version='0.1.0',
+    version='0.2.0',
     packages=find_packages(),
     install_requires=[],
     entry_points={'console_scripts': [],},
@@ -17,5 +17,5 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.12',
+    python_requires='>=3.8',
 )
