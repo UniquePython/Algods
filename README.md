@@ -37,6 +37,24 @@ This function performs a jump search on a sorted list of integers (`arr`) to fin
 
 If the target is found, the function returns the index of the target. If the target is not present in the list, the function returns `None`.
 
+## interpolation_search(arr: List[int], target: int) -> Union[int, None]
+This function performs an interpolation search on a sorted list of integers (`arr`) to find a target integer (`target`). The interpolation search algorithm estimates the position of the target based on the values in the list, assuming a uniform distribution. The steps are as follows:
+
+- **Estimate Position**: The algorithm calculates a probable position for the target using the formula:
+```
+                (target - arr[low])×(high - low)
+    pos = low+ _________________________________
+                      arr[high] - arr[low]
+```
+where `low` and `high` are the indices representing the current search range in the list.
+- **Check Estimated Position**: The algorithm compares the value at the estimated position with the target:
+     - If it matches, the function returns the index of the target.
+     - If the target is less than the value at the estimated position, the search continues in the lower subarray.
+     - If the target is greater, the search continues in the upper subarray.
+- **Repeat or Return**: The process is repeated, adjusting the search range based on the estimated position, until the target is found or the search range is exhausted.
+
+If the target is found, the function returns its index. If the target is not present in the list, the function returns `None`.
+
 # Usage
 Here, I will show you how to import the algorithms and use them.
 
