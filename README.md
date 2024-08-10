@@ -8,6 +8,7 @@ This module includes well-known search algorithms and is ideal for those looking
     - Linear Search
     - Binary Search
     - Jump Search
+    - Interpolation Search
 
 # Installation
 Installing Algods is straightforward. Simply open a terminal and run:
