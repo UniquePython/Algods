@@ -1,15 +1,16 @@
-#pyalgo/pyalgo/search.py
-
+from math import sqrt
 from typing import List, Union
+
+from validation import handle_edge_cases, check_valid_inputs
 
 def linear_search(arr: List[int], target: int) -> Union[int, None]:
     """
     Perform a linear search on the given list.
-
-    arr: List of elements to search through.
-    target: The element to search for.
-    return: The index of the target if found, else None.
     """
+    check_valid_inputs(arr, target)
+    if (edge_case_result := handle_edge_cases(arr, target)) is not None:
+        return edge_case_result
+
     for i in range(len(arr)):
         if arr[i] == target:
             return i
@@ -18,11 +19,11 @@ def linear_search(arr: List[int], target: int) -> Union[int, None]:
 def binary_search(arr: List[int], target: int) -> Union[int, None]:
     """
     Perform a binary search on the given sorted list.
-
-    arr: Sorted list of elements to search through.
-    target: The element to search for.
-    return: The index of the target if found, else None.
     """
+    check_valid_inputs(arr, target)
+    if (edge_case_result := handle_edge_cases(arr, target)) is not None:
+        return edge_case_result
+
     left, right = 0, len(arr) - 1
 
     while left <= right:
@@ -34,4 +35,28 @@ def binary_search(arr: List[int], target: int) -> Union[int, None]:
         else:
             right = mid - 1
     return None
+
+def jump_search(arr: List[int], target: int) -> Union[int, None]:
+    """
+    Perform a jump search on the given sorted list.
+    """
+    check_valid_inputs(arr, target)
+    if (edge_case_result := handle_edge_cases(arr, target)) is not None:
+        return edge_case_result
+
+    length = len(arr)
+    step = int(sqrt(length))
+    prev = 0
+
+    while arr[min(step, length) - 1] < target:
+        prev = step
+        step += step
+        if prev >= length:
+            return None  
+
+    for i in range(prev, min(step, length)):
+        if arr[i] == target:
+            return i 
+
+    return None  
 
